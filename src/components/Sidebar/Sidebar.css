@@ -1,0 +1,22 @@
+aside {
+    width: 20%;
+    padding-left: 2%;
+    border-right: 1px solid gray;
+    height: 100vh;
+}
+
+.sidebar-container ul {
+    list-style: none;
+}
+
+h3.sidebar-lable {
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    margin: 7px;
+}
+
+input[type="checkbox"] {
+    margin: 7px;
+}

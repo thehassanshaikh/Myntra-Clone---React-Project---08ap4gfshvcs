@@ -1,0 +1,17 @@
+.product-detail-container{
+    display: flex;
+}
+
+.product-image-container, .product-details-container  {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.product-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap:5px;
+}
+
+

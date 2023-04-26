@@ -19,7 +19,7 @@ export default function ApiContextProvider({ children }) {
     }, []);
 
     return (
-        <ApiContext.Provider value={{ apiData, setCart, getCart }}>
+        <ApiContext.Provider value={{ apiData, setApiData, setCart, getCart }}>
             {children}
         </ApiContext.Provider>
     )

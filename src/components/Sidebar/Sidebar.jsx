@@ -5,9 +5,12 @@ export const Sidebar = () => {
 
     const { apiData, setApiData } = useContext(ApiContext);
 
+    //Created new use State with empty array to store the checked catgeory data
     const [checkedCategory, setCheckedCategory] = useState([]);
-    const [newProduct, setNewProduct] = useState([]);
-    // setNewProduct(apiData);
+    //created new product use State and copying the apidata init
+    const [newProduct, setNewProduct] = useState(apiData);
+
+    console.log(apiData);
 
     const filterProduct = (e) => {
         if (e.target.checked) {
@@ -18,7 +21,6 @@ export const Sidebar = () => {
         }
     }
 
-    // console.log(apiData);
 
     const searchAndFilter = () => {
         const searchResult = apiData.filter((product) => {
@@ -31,7 +33,7 @@ export const Sidebar = () => {
     }
 
     useEffect(() => {
-        console.log(newProduct);
+  
         if (checkedCategory.length === 0) {
             setApiData(newProduct);
         } else {

@@ -21,10 +21,10 @@ function App() {
     <ApiContextProvider>{/* Use the context here */}
       <Navbar />
       <Routes>
-        <Route path="/" element={<Products />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/product-details/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </ApiContextProvider>
 

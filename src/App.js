@@ -7,7 +7,8 @@ import { Sidebar } from "./components/Sidebar/Sidebar";
 import { SingleProduct } from "./components/SingleProduct/SingleProduct";
 import { Cart } from "./components/Cart/Cart";
 import ApiContextProvider from "./components/Context/ApiContext";
-import Home from "./Home/Home";
+import Home from "./components/Home/Home";
+
 
 export const ApiDataContext = createContext(); // Define the context outside the component
 

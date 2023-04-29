@@ -26,6 +26,7 @@ export const Navbar = () => {
         searchData()
     }, [sbar])
 
+    // function for navitgate the user on product page 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             navigate("/products");

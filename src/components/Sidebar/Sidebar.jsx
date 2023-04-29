@@ -3,14 +3,14 @@ import { ApiContext } from "../Context/ApiContext";
 import "./Sidebar.css"
 export const Sidebar = () => {
 
-    const { apiData, setApiData } = useContext(ApiContext);
+    const { apiData, setApiData, productsData } = useContext(ApiContext);
 
     //Created new use State with empty array to store the checked catgeory data
     const [checkedCategory, setCheckedCategory] = useState([]);
     //created new product use State and copying the apidata init
-    const [newProduct, setNewProduct] = useState(apiData);
+    // const [newProduct, setNewProduct] = useState(apiData);
 
-    console.log(apiData);
+    console.log(productsData);
 
     const filterProduct = (e) => {
         if (e.target.checked) {
@@ -23,21 +23,16 @@ export const Sidebar = () => {
 
 
     const searchAndFilter = () => {
-        const searchResult = apiData.filter((product) => {
-            console.log(product.category, checkedCategory.includes(product.category))
-            if (checkedCategory.includes(product.category)) {
-                return product;
-            }
-        });
+        const searchResult = productsData.filter((product) => checkedCategory.includes(product.category));
         setApiData(searchResult);
+
     }
 
     useEffect(() => {
-  
-        if (checkedCategory.length === 0) {
-            setApiData(newProduct);
-        } else {
 
+        if (checkedCategory.length === 0) {
+            setApiData(productsData);
+        } else {
             searchAndFilter();
         }
 
@@ -45,7 +40,6 @@ export const Sidebar = () => {
 
     useEffect(() => {
         setApiData(apiData);
-        setNewProduct(apiData);
     }, [])
 
     return (
@@ -55,7 +49,7 @@ export const Sidebar = () => {
                 <div className="brands">
                     <h3 className="sidebar-lable">Filter</h3>
                     <ul>
-                        <li className="category-items"><input type="checkbox" name="all" onChange={filterProduct} />All</li>
+                        {/* <li className="category-items"><input type="checkbox" name="all" onChange={filterProduct} />All</li> */}
                         <li className="category-items"><input type="checkbox" name="men's clothing" onChange={filterProduct} />Mens</li>
                         <li className="category-items"><input type="checkbox" name="women's clothing" onChange={filterProduct} />Womens</li>
                         <li className="category-items"><input type="checkbox" name="jewelery" onChange={filterProduct} />Jewellry</li>

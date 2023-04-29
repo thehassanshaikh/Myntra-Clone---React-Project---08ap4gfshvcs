@@ -2,29 +2,29 @@ import "./Navbar.css"
 import { IoPersonOutline, IoBagHandleOutline } from "react-icons/io5";
 import { BsBookmarks } from "react-icons/bs";
 import { useNavigate } from "react-router";
-import { useState,useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { ApiContext } from "../Context/ApiContext";
 
 export const Navbar = () => {
 
-    const {apiData,setApiData} = useContext(ApiContext);
+    const { apiData, setApiData, productsData } = useContext(ApiContext);
 
-    console.log(apiData)
 
-    const [sbar,setSbar]= useState("");
 
-    const searchData = ()=>{
-        const searchResult = apiData.filter((product)=>
+    const [sbar, setSbar] = useState("");
+
+    const searchData = () => {
+        const searchResult = productsData.filter((product) =>
             product.title.toLowerCase().includes(sbar.toLowerCase())
-       );
-    //    if(searchResult.length!== 0){
-    //    }
-    setApiData(searchResult);
+        );
+        //    if(searchResult.length!== 0){
+        //    }
+        setApiData(searchResult);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         searchData()
-    },[sbar])
+    }, [sbar])
 
     const navigate = useNavigate();
     return (
@@ -43,7 +43,7 @@ export const Navbar = () => {
                     </ul>
                 </nav>
                 <div className="search-bar-container">
-                    <input className="search-bar" type="text" value={sbar} onChange={(e)=>setSbar(e.target.value)} placeholder="Seach for porducts,Brands or more" />
+                    <input className="search-bar" type="text" value={sbar} onChange={(e) => setSbar(e.target.value)} placeholder="Seach for porducts,Brands or more" />
                 </div>
                 <div className="account-item-container">
                     <ul className="accounts-items">

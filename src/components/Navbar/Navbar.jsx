@@ -26,6 +26,13 @@ export const Navbar = () => {
         searchData()
     }, [sbar])
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            navigate("/products");
+        }
+        console.log(event);
+    }
+
     const navigate = useNavigate();
     return (
         <>
@@ -43,7 +50,7 @@ export const Navbar = () => {
                     </ul>
                 </nav>
                 <div className="search-bar-container">
-                    <input className="search-bar" type="text" value={sbar} onChange={(e) => setSbar(e.target.value)} placeholder="Seach for porducts,Brands or more" />
+                    <input className="search-bar" type="text" value={sbar} onKeyDown={handleKeyDown} onChange={(e) => setSbar(e.target.value)} placeholder="Seach for porducts,Brands or more" />
                 </div>
                 <div className="account-item-container">
                     <ul className="accounts-items">

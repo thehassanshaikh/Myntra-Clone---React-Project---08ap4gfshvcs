@@ -8,18 +8,36 @@ import { SingleProduct } from "./components/SingleProduct/SingleProduct";
 import { Cart } from "./components/Cart/Cart";
 import ApiContextProvider from "./components/Context/ApiContext";
 import Home from "./components/Home/Home";
+import { MobileNav } from "./components/Navbar/MobileNav/MobileNav";
 
 
 export const ApiDataContext = createContext(); // Define the context outside the component
 
 function App() {
 
+  const [isShown, setIsShown] = useState(true);
 
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsShown(false);
+      } else {
+        setIsShown(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [])
 
 
   return (
     <ApiContextProvider>{/* Use the context here */}
-      <Navbar />
+      {isShown ? <Navbar /> : <MobileNav />}
       <Routes>
         <Route path="/products" element={<Products />} />
         <Route path="/product-details/:id" element={<SingleProduct />} />

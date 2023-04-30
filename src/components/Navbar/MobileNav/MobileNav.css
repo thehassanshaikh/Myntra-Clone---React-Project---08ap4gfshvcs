@@ -1,0 +1,42 @@
+.m-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section.mobile-header {
+    padding: 3% 0;
+}
+
+.m-menu-container {
+    width: 30%;
+}
+
+.m-menu-container {
+    display: flex;
+}
+
+.carts-icon-container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+
+ul.m-accounts-items {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+svg {
+    color: #3e4152;
+}
+
+.m-menu-container svg {
+    font-size: 30px;
+}
+
+li.m-account-item svg {
+    font-size: 20px;
+}

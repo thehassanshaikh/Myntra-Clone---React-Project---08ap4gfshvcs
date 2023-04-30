@@ -4,6 +4,7 @@ import { BsBookmarks } from "react-icons/bs";
 import { useNavigate } from "react-router";
 import { useState, useEffect, useContext } from "react";
 import { ApiContext } from "../Context/ApiContext";
+import { SubMenu } from "../SubMenu/SubMenu";
 
 export const Navbar = () => {
 
@@ -35,6 +36,7 @@ export const Navbar = () => {
     }
 
     const navigate = useNavigate();
+
     return (
         <>
             <header>
@@ -58,7 +60,6 @@ export const Navbar = () => {
                         <li className="account-item"><IoPersonOutline /> Profile</li>
                         <li className="account-item"><BsBookmarks />Wishlist</li>
                         <li className="account-item"><IoBagHandleOutline /> Profile</li>
-
                     </ul>
                 </div>
 

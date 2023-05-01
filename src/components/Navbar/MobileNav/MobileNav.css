@@ -46,3 +46,9 @@ svg {
 li.m-account-item svg {
     font-size: 20px;
 }
+
+@media (max-width:425px) {
+    section.mobile-header {
+        padding: 5% 0;
+    }
+}

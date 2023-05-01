@@ -84,3 +84,17 @@ img.pro-img {
     text-decoration: none;
     color: #ffff;
 }
+
+@media (max-width:768px) {
+    .product-grid {
+        width: 30%;
+    }
+    
+}
+
+@media (max-width:425px) {
+    .product-grid {
+        width: 45%;
+    }
+    
+}

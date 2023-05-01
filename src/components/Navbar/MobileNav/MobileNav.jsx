@@ -15,7 +15,7 @@ export const MobileNav = () => {
             <div className="m-header-container">
                 <div className="m-menu-container">
                     <HiMenu />
-                    <img className="logo" onClick={() => navigate("/")} src="https://ww1.freelogovectors.net/wp-content/uploads/2023/01/myntra-logo-freelogovectors.net_-400x225.png" alt="Myntra logo" />
+                    <img className="m-logo" onClick={() => navigate("/")} src="https://ww1.freelogovectors.net/wp-content/uploads/2023/01/myntra-logo-freelogovectors.net_-400x225.png" alt="Myntra logo" />
                 </div>
                 <div className="carts-icon-container">
                     <ul className="m-accounts-items">

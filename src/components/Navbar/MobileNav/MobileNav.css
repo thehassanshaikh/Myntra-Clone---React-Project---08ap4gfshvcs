@@ -3,9 +3,10 @@
     justify-content: space-between;
 }
 
-.section.mobile-header {
+section.mobile-header {
     padding: 3% 0;
 }
+
 
 .m-menu-container {
     width: 30%;
@@ -13,6 +14,11 @@
 
 .m-menu-container {
     display: flex;
+}
+
+img.m-logo {
+    width: 60%;
+    HEIGHT: 100%;
 }
 
 .carts-icon-container {

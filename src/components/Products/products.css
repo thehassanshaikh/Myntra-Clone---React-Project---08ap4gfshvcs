@@ -96,5 +96,10 @@ img.pro-img {
     .product-grid {
         width: 45%;
     }
+
+     .product-details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
     
-}

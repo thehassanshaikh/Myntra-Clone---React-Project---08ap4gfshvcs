@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 import { useState, useEffect, useContext } from "react";
 import { ApiContext } from "../Context/ApiContext";
 import { SubMenu } from "../SubMenu/SubMenu";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 
@@ -45,11 +46,12 @@ export const Navbar = () => {
                 </div>
                 <nav className="nav-container">
                     <ul className="nav-items">
-                        <li className="nav-item">Men</li>
-                        <li className="nav-item">Women</li>
-                        <li className="nav-item">Kids</li>
-                        <li className="nav-item">Home & living</li>
-                        <li className="nav-item">Stdio</li>
+                       <Link to={"/products"}><li className="nav-item">Men</li></Link>
+                       <Link to={"/products"}><li className="nav-item">Women</li></Link>
+                       <Link to={"/products"}><li className="nav-item">Kids</li></Link>
+                       <Link to={"/products"}><li className="nav-item">Home & living</li></Link>
+                       <Link to={"/products"}><li className="nav-item">Beauty</li></Link>
+                       <Link to={"/products"}><li className="nav-item">Stdio</li></Link>
                     </ul>
                 </nav>
                 <div className="search-bar-container">

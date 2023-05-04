@@ -24,6 +24,25 @@ header {
     align-items: center;
 }
 
+.nav-1:hover{
+    border-bottom:3px solid #ee5f73
+}
+.nav-2:hover{
+    border-bottom:3px solid #fb56c1
+}
+.nav-3:hover{
+    border-bottom:3px solid #f26a10
+}
+.nav-4:hover{
+    border-bottom:3px solid #f2c210
+}
+.nav-5:hover{
+    border-bottom:3px solid rgb(96, 225, 235)
+}
+.nav-6:hover{
+    border-bottom:3px solid rgb(127, 235, 95)
+}
+
 .search-bar-container {
     width: 35%;
     justify-content: center;

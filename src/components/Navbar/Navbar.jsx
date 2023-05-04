@@ -46,12 +46,12 @@ export const Navbar = () => {
                 </div>
                 <nav className="nav-container">
                     <ul className="nav-items">
-                       <Link to={"/products"}><li className="nav-item">Men</li></Link>
-                       <Link to={"/products"}><li className="nav-item">Women</li></Link>
-                       <Link to={"/products"}><li className="nav-item">Kids</li></Link>
-                       <Link to={"/products"}><li className="nav-item">Home & living</li></Link>
-                       <Link to={"/products"}><li className="nav-item">Beauty</li></Link>
-                       <Link to={"/products"}><li className="nav-item">Stdio</li></Link>
+                       <Link to={"/products"}><li className="nav-item nav-1">Men</li></Link>
+                       <Link to={"/products"}><li className="nav-item nav-2">Women</li></Link>
+                       <Link to={"/products"}><li className="nav-item nav-3">Kids</li></Link>
+                       <Link to={"/products"}><li className="nav-item nav-4">Home & living</li></Link>
+                       <Link to={"/products"}><li className="nav-item nav-5">Beauty</li></Link>
+                       <Link to={"/products"}><li className="nav-item nav-6">Stdio</li></Link>
                     </ul>
                 </nav>
                 <div className="search-bar-container">

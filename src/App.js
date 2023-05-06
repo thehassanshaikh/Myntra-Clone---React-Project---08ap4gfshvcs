@@ -10,6 +10,7 @@ import ApiContextProvider from "./components/Context/ApiContext";
 import Home from "./components/Home/Home";
 import { MobileNav } from "./components/Navbar/MobileNav/MobileNav";
 import { SignIn } from "./pages/SignIn/SignIn"
+import { Footer } from "./components/Footer/Footer";
 
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/signin" element={<SignIn />} /> */}
       </Routes>
+      <Footer />
     </ApiContextProvider>
 
   );

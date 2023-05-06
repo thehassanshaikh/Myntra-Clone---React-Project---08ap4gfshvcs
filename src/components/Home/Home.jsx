@@ -208,7 +208,7 @@ function Home() {
                     </div>
                 </div>
             </div>
- {/*================= DEALS ON TOP BRANDS ==========================*/}
+            {/*================= DEALS ON TOP BRANDS ==========================*/}
             <div className="text-banner-container">
                 <h4 className='text-banner-title'>DEALS ON TOP BRANDS</h4>
             </div>
@@ -241,36 +241,39 @@ function Home() {
                 </div>
             </div>
 
-            {/*=================== BRANDS AT SLASHED PRICES  ================= */}
+            {/*=================== NEW IN TOP BRANDS ================= */}
 
             <div className="text-banner-container">
-                <h4 className='text-banner-title'>BRANDS AT SLASHED PRICES</h4>
+                <h4 className='text-banner-title'>NEW IN TOP BRANDS</h4>
             </div>
             <div className="container-container">
                 <div className="row-base">
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/1aaf5e6a-2978-4ed8-9634-1559f530d73b1645860227457-SS22-BestOfBrands-H_M.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/3ce3c5e7-6060-4b15-b80b-6ddcd19d385a1645860227491-SS22-BestOfBrands-Max.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/3ce3c5e7-6060-4b15-b80b-6ddcd19d385a1645860227491-SS22-BestOfBrands-Max.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/ae3f2d8b-4f02-40ab-8233-d9ab9c7be4941645860227438-SS22-BestOfBrands-CKJeans.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/426cb519-be57-4970-b23c-edb9e442cb761645860227551-SS22-BestOfBrands-W.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/823d5fd5-48e6-4eb1-bd66-1ea70306275a1645860227498-SS22-BestOfBrands-Metro.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/823d5fd5-48e6-4eb1-bd66-1ea70306275a1645860227498-SS22-BestOfBrands-Metro.jpg" alt="" />
                     </div>
                     <div className="coloum-base">
-                        <img src="" alt="" />
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/25/fd730d26-ff9d-41e5-af2e-b20f71757b5f1645779089335-BestOfBrands-Nike.jpg" alt="" />
+                    </div>
+                    <div className="coloum-base">
+                        <img src="https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/b69656bd-7766-45db-96ea-d45df19a7a361645860227484-SS22-BestOfBrands-LP.jpg" alt="" />
                     </div>
                 </div>
             </div>

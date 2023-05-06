@@ -45,7 +45,7 @@ function App() {
         <Route path="/product-details/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
+        {/* <Route path="/signin" element={<SignIn />} /> */}
       </Routes>
     </ApiContextProvider>
 

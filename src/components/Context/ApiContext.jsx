@@ -1,5 +1,8 @@
-import React, { Children } from 'react'
+import React, { Children, useContext } from 'react'
 import { createContext, useState, useEffect } from 'react'
+import { GoogleAuthProvider, signInWithPopup, signInWithRedirect, signOut, onAuthStateChanged } from "firebase/auth";
+import { auth } from '../../firebase';
+
 
 
 export const ApiContext = createContext()
@@ -21,9 +24,20 @@ export default function ApiContextProvider({ children }) {
         getApiDetails()
     }, []);
 
+    const googleSingIn = () => {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider)
+    }
+
     return (
-        <ApiContext.Provider value={{ apiData, setApiData, setCart, getCart, productsData }}>
+        <ApiContext.Provider value={{ apiData, setApiData, setCart, getCart, productsData, googleSingIn }}>
             {children}
         </ApiContext.Provider>
-    )
+    );
+
+
 }
+
+export const UserAuth = () => {
+    return useContext(ApiContextProvider)
+};

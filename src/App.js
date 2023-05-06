@@ -9,6 +9,8 @@ import { Cart } from "./components/Cart/Cart";
 import ApiContextProvider from "./components/Context/ApiContext";
 import Home from "./components/Home/Home";
 import { MobileNav } from "./components/Navbar/MobileNav/MobileNav";
+import { SignIn } from "./pages/SignIn/SignIn"
+
 
 
 export const ApiDataContext = createContext(); // Define the context outside the component
@@ -43,6 +45,7 @@ function App() {
         <Route path="/product-details/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </ApiContextProvider>
 

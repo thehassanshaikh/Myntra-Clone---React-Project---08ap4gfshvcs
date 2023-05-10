@@ -1,0 +1,68 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.singin-container{
+    background-color: #fcefe6;
+    height: 60vh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.login-con{
+    width: 500px;
+    background-color: #ffff;
+}
+
+.form-controller{
+    padding: 30px;
+}
+
+.signin-inpt{
+    border: 1px solid #d4d5d9;
+    font-size: 14px;
+    padding: 11px 12px;
+    line-height: 16px;
+    height: auto;
+    color: #282c3f;
+    width: 100%;
+}
+
+form {
+    padding-top: 5%;
+}
+
+.sign-tc{
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.signin-t{
+    cursor: pointer;
+    color: #ff3c6f;
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+
+
+.signin-submit-btn{
+    cursor: pointer;
+    background-color: #ff3f6c;
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    width:100%;
+    text-transform: uppercase;
+}

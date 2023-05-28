@@ -7,12 +7,22 @@ export const Cart = () => {
 
     const [cartTotal, setCartTotal] = useState(0);
 
+    const [taxAmt, setTaxAmt] = useState(0);
+
     useEffect(() => {
         const totalPrice = getCart.reduce(
             (total, { price }) => total + price,
             0
         );
         setCartTotal(totalPrice);
+        //for counting taxable amt
+        // 
+        const taxPrice = totalPrice * 5 / 100;
+
+        console.log(taxPrice);
+        setTaxAmt(taxPrice + totalPrice);
+
+
     }, [getCart]);
 
     return (
@@ -38,7 +48,8 @@ export const Cart = () => {
                                 <p className="mb-1 text-lg font-bold">
                                     ${cartTotal.toFixed(2)} USD
                                 </p>
-                                <p className="text-sm text-gray-700">including VAT</p>
+
+                                <p className="text-sm text-gray-700">including 5% GST {taxAmt.toFixed(0)}</p>
                             </div>
                         </div>
                         <button className="mt-6 w-full rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600">

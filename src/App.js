@@ -11,6 +11,7 @@ import Home from "./components/Home/Home";
 import { MobileNav } from "./components/Navbar/MobileNav/MobileNav";
 import { SignIn } from "./pages/SignIn/SignIn"
 import { Footer } from "./components/Footer/Footer";
+import { WishList } from "./pages/WishList/WishList";
 
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/wishlist" element={<WishList />} />
       </Routes>
       <Footer />
     </ApiContextProvider>

@@ -60,7 +60,7 @@ export const Navbar = () => {
                 <div className="account-item-container">
                     <ul className="accounts-items">
                         <li className="account-item" onClick={()=> navigate('/signin')}><IoPersonOutline /> Profile</li>
-                        <li className="account-item"><BsBookmarks />Wishlist</li>
+                        <li className="account-item" onClick={()=> navigate('/wishlist')}><BsBookmarks />Wishlist</li>
                         <li className="account-item" onClick={()=> navigate('/cart')}><IoBagHandleOutline />Cart</li>
                     </ul>
                 </div>

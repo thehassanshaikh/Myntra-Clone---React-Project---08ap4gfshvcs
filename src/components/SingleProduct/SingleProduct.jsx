@@ -9,7 +9,6 @@ import { useContext } from "react";
 import { ApiContext } from "../Context/ApiContext";
 
 
-
 export const SingleProduct = () => {
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(true)
@@ -18,6 +17,7 @@ export const SingleProduct = () => {
     const navigate = useNavigate()
 
     const { setCart, getCart } = useContext(ApiContext);
+    const { wishlist, setWishlist } = useContext(ApiContext);
 
     const getProduct = async () => {
         await fetch(`https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products?id=${id}`)
@@ -39,8 +39,15 @@ export const SingleProduct = () => {
     const carthandler = () => {
         setCart([...getCart, product[0]])
         navigate("/cart");
-        console.log(product[0])
+        console.log(product[0]) 
     }
+
+    const whishListhandler = () =>{
+        setWishlist([...wishlist,product[0]]);
+        console.log(wishlist);
+    }
+
+    
 
 
 
@@ -56,7 +63,7 @@ export const SingleProduct = () => {
                     <div class="price">₹{product[0]?.price}</div>
                     <div class="buttons">
                         <Link to="/cart"><button onClick={carthandler}>Add to Cart</button></Link>
-                        <button>Add to Wish List <AiOutlineHeart /></button>
+                        <button  onClick={whishListhandler}>Add to Wish List</button>
                     </div>
                 </div>
             </div>

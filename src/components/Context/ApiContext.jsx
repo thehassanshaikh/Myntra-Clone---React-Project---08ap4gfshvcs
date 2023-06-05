@@ -11,6 +11,7 @@ export default function ApiContextProvider({ children }) {
     const [apiData, setApiData] = useState([]);
     const [getCart, setCart] = useState([]);
     const [productsData, setProductData] = useState([])
+    const [wishlist, setWishlist] = useState([])
 
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function ApiContextProvider({ children }) {
     }
 
     return (
-        <ApiContext.Provider value={{ apiData, setApiData, setCart, getCart, productsData, googleSingIn }}>
+        <ApiContext.Provider value={{ apiData, setApiData, setCart, getCart, productsData, googleSingIn, wishlist, setWishlist }}>
             {children}
         </ApiContext.Provider>
     );

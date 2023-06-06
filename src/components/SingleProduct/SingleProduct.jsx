@@ -7,6 +7,7 @@ import { Loader } from "../Loader/Loader";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ApiContext } from "../Context/ApiContext";
+import Swal from 'sweetalert2';
 
 
 export const SingleProduct = () => {
@@ -38,12 +39,18 @@ export const SingleProduct = () => {
 
     const carthandler = () => {
         setCart([...getCart, product[0]])
-        navigate("/cart");
+
+        Swal.fire('Product added to cart');
+
+        // navigate("/cart");
         console.log(product[0]) 
     }
 
     const whishListhandler = () =>{
         setWishlist([...wishlist,product[0]]);
+
+        Swal.fire('Product added to wishlist');
+
         console.log(wishlist);
     }
 

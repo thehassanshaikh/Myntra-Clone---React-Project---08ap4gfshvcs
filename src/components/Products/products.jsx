@@ -29,12 +29,9 @@ export const Products = () => {
                                 <h3 className="product-price">₹ {item.price}</h3>
                                 <Link to={`/product-details/${item.id}`} key={item.id}> <button className="product-button"><a href="#">View More</a></button></Link>
                             </div>
-
                         </div>
                     ))}
-
                 </div>
-
             </section>
         </div>
     )

@@ -24,7 +24,7 @@ export const Products = () => {
                                     className="pro-img" />
                             </div>
                             <div className="product-ditails">
-                                <h3 className="product-brand">Brand Name</h3>
+                                <h3 className="product-brand">{item.category}</h3>
                                 <h3 className="product-title">{item.title}</h3>
                                 <h3 className="product-price">₹ {item.price}</h3>
                                 <Link to={`/product-details/${item.id}`} key={item.id}> <button className="product-button"><a href="#">View More</a></button></Link>

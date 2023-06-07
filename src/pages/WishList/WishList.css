@@ -1,17 +1,25 @@
+section.wishList-section {
+    text-align: center;
+}
+
+
 .wishlist-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
 }
 
-.wish-product-con{
+.wish-product-con {
     width: 20%;
+    margin: 0 2.5%;
 }
 
 .wish-heading{
     font-size: 24px;
     font-weight: 700;
     color: #282c3f;
+    padding: 3%;
 }
